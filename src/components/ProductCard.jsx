@@ -46,7 +46,7 @@ const ProductCard = ({ product, addToCart, removeFromCart, cartItems }) => {
         <Card.Text>
           <span className="text-muted">{product.category}</span>
           <br />
-          <strong className="text-success">Rs {product.price}</strong> 
+          <strong className="text-success">Rs {product.price*quantity}</strong> 
           <div className="d-flex justify-content-between align-items-center mt-3">
             <div>
               <Button variant="outline-secondary" className="me-2" onClick={decrementQuantity}>-</Button>
